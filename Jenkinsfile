@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/dashoook/softtry.git'
+        git ([url: 'https://github.com/dashoook/softtry.git', branch: 'main'])
       }
     }
     stage('Building image') {
